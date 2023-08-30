@@ -41,17 +41,17 @@ form.addEventListener("submit", (evento) => {
 
 //Função responsável por criar o novo elemento
 function criaElemento(item) {
-  const novoItem = document.createElement("li");
-  novoItem.classList.add("item");
+  const novoElemento = document.createElement("li");
+  novoElemento.classList.add("item");
 
   const quantidadeItem = document.createElement("strong");
   quantidadeItem.innerHTML = item.quantidade;
   quantidadeItem.dataset.id = item.id;
 
-  novoItem.appendChild(quantidadeItem);
-  novoItem.innerHTML += item.nome;
+  novoElemento.appendChild(quantidadeItem);
+  novoElemento.innerHTML += item.nome;
 
-  list.appendChild(novoItem);
+  list.appendChild(novoElemento);
 }
 
 //Função responsável por atualizar o elemento
